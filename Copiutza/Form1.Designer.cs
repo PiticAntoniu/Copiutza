@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "loginForm";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.loginForm_Load);
             this.ResumeLayout(false);
 
         }

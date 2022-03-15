@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Copiutza.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace Copiutza
         public loginForm()
         {
             InitializeComponent();
+        }
+
+        private void loginForm_Load(object sender, EventArgs e)
+        {
+            User u = new User();
+            u.NickName = "Toni";
+            Console.WriteLine(u.NickName);
+
+            string t = u.NickName;
+
         }
     }
 }
