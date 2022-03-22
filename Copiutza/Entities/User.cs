@@ -22,7 +22,7 @@ namespace Copiutza.Entities
         public string Password { get => password; set => password = value; }
         #endregion data
 
-        protected void ResetPassword()
+        protected internal void ResetPassword()
         {
             // reset password
             if (GetMail() == email)
@@ -31,7 +31,7 @@ namespace Copiutza.Entities
             }
         }
 
-        private string GetMail()
+        protected internal string GetMail()
         {
             throw new NotImplementedException();
         }
